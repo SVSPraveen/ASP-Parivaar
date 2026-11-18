@@ -1,17 +1,23 @@
 // js/config.js - Central Configuration for ASP Parivaar Website
 
 (function (window) {
-    // When running locally from file://, fallback to localhost:5000
-    // When deployed on Vercel or running on http://localhost:5000, empty string uses same-origin relative path /api
-    const isFileProtocol = typeof window !== 'undefined' && window.location && window.location.protocol === 'file:';
+    // Check if the frontend is running in a local environment
+    const isLocalhost = typeof window !== 'undefined' && Boolean(
+        window.location.hostname === 'localhost' ||
+        window.location.hostname === '127.0.0.1' ||
+        window.location.hostname === '[::1]'
+    );
 
     window.CONFIG = {
         // Backend API URL:
-        // - In production on Vercel (https://www.aspparivaar.in), requests route directly to /api/...
-        // - When opened as a local file, falls back to http://localhost:5000
-        API_URL: isFileProtocol ? "http://localhost:5000" : "",
+        // - Automatically routes to http://localhost:5000 when developing locally
+        // - When published / live, connects to your remote production backend
+        API_URL: isLocalhost 
+            ? "http://localhost:5000" 
+            : "https://asp-backend-live.onrender.com",
         
         // Razorpay Live Key ID
+        // For development/testing, replace with your 'rzp_test_...' key
         RAZORPAY_KEY_ID: "rzp_live_S2VewO1jmc2WbS"
     };
 })(typeof window !== 'undefined' ? window : this);
