@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - ASP Parivaar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    
+    <script src="js/config.js"></script>
+</head>
+<body class="bg-gray-50 font-sans flex flex-col min-h-screen">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-20 items-center">
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-3">
+                    <img src="images/logo.png" alt="ASP Logo" class="h-16 w-auto object-contain py-1">
+                </a>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-700 hover:text-green-600 font-medium transition">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-green-600 font-medium transition">About Us</a>
+                    <a href="team.html" class="text-gray-700 hover:text-green-600 font-medium transition">Our Team</a>
+                    <a href="projects.html" class="text-gray-700 hover:text-green-600 font-medium transition">Projects</a>
+                    <a href="gallery.html" class="text-gray-700 hover:text-green-600 font-medium transition">Gallery</a>
+                    <a href="contact.html" class="text-green-600 font-bold border-b-2 border-green-600 pb-1">Contact</a>
+                    <a href="donate.html" class="bg-green-600 text-white px-5 py-2 rounded-full font-bold hover:bg-green-700 transition shadow-md hover:shadow-lg transform hover:-translate-y-0.5">Donate Now</a>
+                </div>
+
+                <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-gray-700 focus:outline-none p-2">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl z-50">
+            <div class="px-4 py-4 space-y-3">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded-lg">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded-lg">About Us</a>
+                <a href="team.html" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded-lg">Our Team</a>
+                <a href="projects.html" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded-lg">Projects</a>
+                <a href="gallery.html" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded-lg">Gallery</a>
+                <a href="contact.html" class="block px-3 py-2 text-green-600 font-bold bg-green-50 rounded-lg">Contact</a>
+                <a href="donate.html" class="block px-3 py-3 mt-4 text-center text-white bg-green-600 font-bold rounded-lg shadow">Donate Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-6xl mx-auto px-4 py-12 flex-grow">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Get in Touch</h1>
+            <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                Have a question or want to partner with us? We'd love to hear from you.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <div class="bg-green-700 text-white p-10 rounded-xl shadow-lg flex flex-col justify-between">
+                <div>
+                    <h2 class="text-3xl font-bold mb-8">Contact Information</h2>
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-green-600 p-3 rounded-full"><i class="fas fa-map-marker-alt text-2xl"></i></div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Our Office</h3>
+                                <p class="text-green-100 leading-relaxed">
+                                    616/009P IIM ROAD, Dwarikapuri Colony,<br>
+                                    Allu Nagar Diguria, Lucknow - 226020
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-green-600 p-3 rounded-full"><i class="fas fa-phone-alt text-2xl"></i></div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Phone</h3>
+                                <p class="text-green-100 font-mono text-lg">+91 99359 20617</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-green-600 p-3 rounded-full"><i class="fas fa-envelope text-2xl"></i></div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Email</h3>
+                                <p class="text-green-100">aspparivaar@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 pt-8 border-t border-green-600">
+                    <p class="mb-4 font-bold">Follow Us:</p>
+                    <div class="flex gap-4">
+                         <a href="https://www.instagram.com/asp_parivar" target="_blank" class="bg-white text-green-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-green-100 transition"><i class="fab fa-instagram"></i></a>
+                         <a href="http://www.youtube.com/@aspparivaar" target="_blank" class="bg-white text-green-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-green-100 transition"><i class="fab fa-youtube"></i></a>
+                         <a href="https://wa.me/+919935920617" target="_blank" class="bg-white text-green-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-green-100 transition"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-10 rounded-xl shadow-lg border border-gray-100">
+                <form id="contactForm" class="space-y-6">
+                    <div>
+                        <label class="block text-gray-700 font-bold mb-2">Your Name</label>
+                        <input type="text" id="cName" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 outline-none transition" placeholder="Enter your name" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-bold mb-2">Email Address</label>
+                        <input type="email" id="cEmail" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 outline-none transition" placeholder="Enter your email" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-bold mb-2">Subject</label>
+                        <input type="text" id="cSubject" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 outline-none transition" placeholder="Enter the subject" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-bold mb-2">Message</label>
+                        <textarea id="cMessage" rows="5" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 outline-none transition" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <button type="submit" id="cBtn" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-lg text-lg transition shadow-md hover:shadow-lg transform active:scale-95">
+                        Send Message
+                    </button>
+                    <div id="cStatus" class="hidden rounded-lg p-3 text-center mt-4 text-sm font-bold"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-900 text-white py-12 border-t-4 border-green-600 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <div class="flex flex-col items-center md:items-start">
+                <img src="images/logo.png" alt="ASP Logo" class="h-20 w-auto mb-4 bg-white rounded-lg p-2">
+                <p class="text-gray-400 text-sm">
+                    <strong>Ajeevan Samarpan Parivaar</strong><br/>
+                    "Samarpan se bandhe, jeevan bhar ke liye ekjut."
+                </p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4 text-green-500 uppercase tracking-wider">Quick Links</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                    <li><a href="team.html" class="hover:text-white transition">Our Team</a></li>
+                    <li><a href="projects.html" class="hover:text-white transition">Our Projects</a></li>
+                    <li><a href="donate.html" class="hover:text-white transition">Donate</a></li>
+                    <li><a href="download.html" class="hover:text-white transition">Download App</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4 text-green-500 uppercase tracking-wider">Connect</h3>
+                <div class="flex justify-center md:justify-start space-x-4 mb-4">
+                    <a href="https://www.linkedin.com/in/ajeevan-samarpan-parivaar-84424b354" target="_blank" class="text-gray-400 hover:text-blue-500 transition"><i class="fab fa-linkedin-in text-2xl"></i></a>
+                    <a href="https://www.instagram.com/asp_parivar" target="_blank" class="text-gray-400 hover:text-pink-500 transition"><i class="fab fa-instagram text-2xl"></i></a>
+                    <a href="https://wa.me/+919935920617" target="_blank" class="text-gray-400 hover:text-green-500 transition"><i class="fab fa-whatsapp text-2xl"></i></a>
+                    <a href="http://www.youtube.com/@aspparivaar" target="_blank" class="text-gray-400 hover:text-red-500 transition"><i class="fab fa-youtube text-2xl"></i></a>
+                </div>
+                <p class="text-gray-400 text-sm">aspparivaar@gmail.com</p>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500 text-sm">
+            &copy; 2026 Ajeevan Samarpan Parivaar. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = document.getElementById('cBtn');
+            const status = document.getElementById('cStatus');
+            
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            status.classList.add('hidden');
+            
+            const formData = {
+                fullName: document.getElementById('cName').value.trim(),
+                email: document.getElementById('cEmail').value.trim(),
+                subject: document.getElementById('cSubject').value.trim(),
+                message: document.getElementById('cMessage').value.trim()
+            };
+
+            try {
+                const res = await fetch(`${CONFIG.API_URL}/api/contact/submit`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+                
+                if (!res.ok) {
+                    throw new Error(`Server returned HTTP ${res.status}`);
+                }
+
+                const data = await res.json();
+                
+                if (data.success) {
+                    status.innerHTML = '<i class="fas fa-check-circle"></i> Message Sent Successfully!';
+                    status.className = "rounded-lg p-3 text-center mt-4 text-sm font-bold bg-green-100 text-green-800 border border-green-200 block";
+                    document.getElementById('contactForm').reset();
+                } else { 
+                    throw new Error(data.message || 'Server returned false success'); 
+                }
+            } catch (err) {
+                console.error(err);
+                status.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Error sending message. If backend is offline, please email directly to <a href="mailto:aspparivaar@gmail.com" class="underline font-bold">aspparivaar@gmail.com</a> or WhatsApp <a href="https://wa.me/+919935920617" class="underline font-bold">+91 99359 20617</a>.';
+                status.className = "rounded-lg p-3 text-center mt-4 text-sm font-bold bg-red-100 text-red-800 border border-red-200 block";
+            } finally {
+                btn.disabled = false;
+                btn.innerText = "Send Message";
+            }
+        });
+    </script>
+</body>
+</html>

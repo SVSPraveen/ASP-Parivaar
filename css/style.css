@@ -1,0 +1,58 @@
+/* css/style.css */
+
+/* 1. Global Font Setting */
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 2. Hero Section Overlay (Darkens background images) */
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.6); /* 60% Black Overlay */
+    position: absolute;
+    inset: 0;
+}
+
+/* 3. Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* 4. Spinner for Buttons (Loading State) */
+.fa-spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 5. Gallery Image Hover Effect */
+.group:hover .group-hover\:scale-110 {
+    transform: scale(1.1);
+}
+
+/* 6. Custom Scrollbar (Makes the site look premium) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #16a34a; /* Green-600 */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #15803d; /* Green-700 */
+}

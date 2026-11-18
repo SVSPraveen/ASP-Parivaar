@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Gallery - ASP Parivaar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body class="bg-white font-sans">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-20 items-center">
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-3">
+                    <img src="images/logo.png" alt="ASP Logo" class="h-14 w-auto object-contain">
+                    <div class="hidden md:block leading-tight"><h1 class="font-bold text-lg text-gray-900">AJEEVAN SAMARPAN PARIVAAR</h1></div>
+                </a>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-green-600 font-medium">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-green-600 font-medium">About Us</a>
+                    <a href="team.html" class="text-gray-600 hover:text-green-600 font-medium">Our Team</a>
+                    <a href="projects.html" class="text-gray-600 hover:text-green-600 font-medium">Projects</a>
+                    <a href="gallery.html" class="text-green-600 font-bold border-b-2 border-green-600 pb-1">Gallery</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-green-600 font-medium">Contact</a>
+                    <a href="donate.html" class="bg-green-600 text-white px-6 py-2.5 rounded-full font-bold shadow hover:bg-green-700">Donate</a>
+                </div>
+                <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-gray-700 focus:outline-none p-2"><i class="fas fa-bars text-2xl"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-4 py-4 space-y-3 shadow-xl">
+            <a href="index.html" class="block px-3 py-2 text-gray-700">Home</a>
+            <a href="about.html" class="block px-3 py-2 text-gray-700">About Us</a>
+            <a href="team.html" class="block px-3 py-2 text-gray-700">Our Team</a>
+            <a href="projects.html" class="block px-3 py-2 text-gray-700">Projects</a>
+            <a href="gallery.html" class="block px-3 py-2 text-green-600 font-bold bg-green-50 rounded">Gallery</a>
+            <a href="contact.html" class="block px-3 py-2 text-gray-700">Contact</a>
+            <a href="donate.html" class="block px-3 py-3 mt-4 text-center text-white bg-green-600 font-bold rounded shadow">Donate Now</a>
+        </div>
+    </nav>
+
+    <div class="bg-gray-900 text-white py-20 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Gallery</h1>
+        <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+            Glimpses of our efforts, smiles we’ve spread, and the change we are making together.
+        </p>
+    </div>
+
+    <section class="py-16 bg-orange-50 px-4">
+        <div class="max-w-7xl mx-auto">
+            
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 border-l-4 border-orange-600 pl-4">
+                Inauguration Highlights (Official Videos)
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <div class="rounded-xl overflow-hidden shadow-2xl border-4 border-white bg-black aspect-video relative group">
+                    <video class="w-full h-full object-cover cursor-pointer" controls poster="images/iam1.jpeg">
+                        <source src="images/iamv1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-2xl border-4 border-white bg-black aspect-video relative group">
+                    <video class="w-full h-full object-cover cursor-pointer" controls poster="images/iam3.jpeg">
+                        <source src="images/iamv2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 border-l-4 border-red-600 pl-4">
+                    Media & Coverage (YouTube)
+                </h2>
+                <a href="https://www.youtube.com/@aspparivaar" target="_blank" class="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full text-sm font-semibold transition shadow">
+                    <i class="fab fa-youtube text-lg"></i> Visit YouTube Channel
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="rounded-xl overflow-hidden shadow-lg bg-black border-4 border-white flex flex-col">
+                    <div class="w-full aspect-video bg-black relative">
+                        <iframe 
+                            class="w-full h-full"
+                            src="https://www.youtube-nocookie.com/embed/0HcTAch0SV4?rel=0" 
+                            title="Vision Bharat | Ajeevan Samarpan Parivaar" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="bg-gray-900 p-4 flex items-center justify-between">
+                        <span class="text-white text-sm font-semibold truncate">Vision Bharat | Ajeevan Samarpan Parivaar</span>
+                        <a href="https://www.youtube.com/watch?v=0HcTAch0SV4" target="_blank" class="text-red-400 hover:text-red-300 text-xs font-bold whitespace-nowrap ml-2 inline-flex items-center gap-1">
+                            Watch on YouTube <i class="fas fa-external-link-alt text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-lg bg-black border-4 border-white flex flex-col">
+                    <div class="w-full aspect-video bg-black relative">
+                        <iframe 
+                            class="w-full h-full"
+                            src="https://www.youtube-nocookie.com/embed/jnDv_G8iLKw?rel=0" 
+                            title="AI's Impact on Voters: A Leader's Take" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="bg-gray-900 p-4 flex items-center justify-between">
+                        <span class="text-white text-sm font-semibold truncate">"AI's Impact on Voters: A Leader's Take"</span>
+                        <a href="https://www.youtube.com/watch?v=jnDv_G8iLKw" target="_blank" class="text-red-400 hover:text-red-300 text-xs font-bold whitespace-nowrap ml-2 inline-flex items-center gap-1">
+                            Watch on YouTube <i class="fas fa-external-link-alt text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-16 px-4 max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 border-l-4 border-green-600 pl-4">
+            Moments of Service
+        </h2>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="gallery-grid">
+        </div>
+    </section>
+
+    <!-- Interactive Lightbox Modal -->
+    <div id="image-modal" class="fixed inset-0 bg-black/85 z-50 hidden flex items-center justify-center p-4" onclick="closeModal()">
+        <div class="relative max-w-4xl max-h-[90vh] flex flex-col items-center" onclick="event.stopPropagation()">
+            <button onclick="closeModal()" class="absolute -top-10 right-0 text-white text-3xl font-bold hover:text-green-400 transition">&times;</button>
+            <img id="modal-img" src="" alt="Enlarged gallery photo" class="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl border-2 border-white/20">
+        </div>
+    </div>
+
+    <footer class="bg-gray-900 text-white py-12 border-t-4 border-green-600 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            
+            <div class="flex flex-col items-center md:items-start">
+                <img src="images/logo.png" alt="ASP Logo" class="h-20 w-auto mb-4 bg-white rounded-lg p-2">
+                <p class="text-gray-400 text-sm">
+                    Ajeevan Samarpan Parivaar.<br/>
+                    Samarpan se bandhe, jeevan bhar ke liye ekjut.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold mb-4 text-green-500">Quick Links</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                    <li><a href="projects.html" class="hover:text-white transition">Our Projects</a></li>
+                    <li><a href="donate.html" class="hover:text-white transition">Donate</a></li>
+                    <li><a href="download.html" class="hover:text-white transition">Download App</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold mb-4 text-green-500">Follow Us On</h3>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="https://www.linkedin.com/in/ajeevan-samarpan-parivaar-84424b354" target="_blank" class="bg-white p-3 rounded-full text-blue-700 hover:scale-110 transition duration-300"><i class="fab fa-linkedin-in text-xl"></i></a>
+                    <a href="https://www.instagram.com/asp_parivar" target="_blank" class="bg-white p-3 rounded-full text-pink-600 hover:scale-110 transition duration-300"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="http://www.youtube.com/@aspparivaar" target="_blank" class="bg-white p-3 rounded-full text-red-600 hover:scale-110 transition duration-300"><i class="fab fa-youtube text-xl"></i></a>
+                    <a href="https://wa.me/+919935920617" target="_blank" class="bg-white p-3 rounded-full text-green-600 hover:scale-110 transition duration-300"><i class="fab fa-whatsapp text-xl"></i></a>
+                </div>
+                
+                <div class="mt-6 text-gray-400 text-sm">
+                    <p>Contact: +91 99359 20617</p>
+                    <p>Email: aspparivaar@gmail.com</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500 text-sm">
+            &copy; 2026 Ajeevan Samarpan Parivaar. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Authentic photos from NGO ground drives and moments of service
+        const photos = [
+            "iam1.jpeg", "iam2.jpeg", "iam3.jpeg", 
+            "iam4.jpeg", "iam5.jpeg", "iam6.jpeg",
+            "1.jpeg", "n1_2.png", "n1_5.png", 
+            "11.jpg", "5.jpeg", "6.jpg", 
+            "7.jpg", "8.jpg", "10.jpg", 
+            "4.jpeg", "13.jpg", "14.jpg", 
+            "15.jpg", "16.jpg", "17.jpeg", 
+            "18.jpeg", "n1_1.png", "2.jpeg", 
+            "n1_3.jpg", "n1_4.png"
+        ];
+
+        const grid = document.getElementById('gallery-grid');
+        photos.forEach((src) => {
+            const card = document.createElement('div');
+            card.className = "group relative overflow-hidden rounded-lg shadow-md h-64 cursor-pointer bg-gray-100";
+            card.onclick = () => openModal(`images/${src}`);
+            card.innerHTML = `
+                <img 
+                    src="images/${src}" 
+                    alt="ASP Samarpan Moment" 
+                    loading="lazy"
+                    class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
+                    onerror="this.parentElement.style.display='none'"
+                >
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-25 transition duration-300 flex items-center justify-center">
+                    <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition duration-300 transform scale-75 group-hover:scale-100"></i>
+                </div>
+            `;
+            grid.appendChild(card);
+        });
+
+        // Lightbox Modal Controls
+        function openModal(imgSrc) {
+            const modal = document.getElementById('image-modal');
+            const modalImg = document.getElementById('modal-img');
+            modalImg.src = imgSrc;
+            modal.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('image-modal');
+            modal.classList.add('hidden');
+            document.getElementById('modal-img').src = '';
+            document.body.classList.remove('overflow-hidden');
+        }
+
+        // Close on Escape key
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajeevan Samarpan Parivaar - To Serve Bharat, Beyond Self</title>
+    <meta name="description" content="Ajeevan Samarpan Parivaar is a nationwide movement rooted in selfless service. Join us to uplift society through education, healthcare, and environmental protection.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-20 items-center">
+                
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-3">
+                    <img src="images/logo.png" alt="ASP Logo" class="h-16 w-auto object-contain py-1">
+                </a>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-green-600 font-bold border-b-2 border-green-600 pb-1">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-green-600 font-medium transition">About Us</a>
+                    <a href="team.html" class="text-gray-700 hover:text-green-600 font-medium transition">Our Team</a>
+                    <a href="projects.html" class="text-gray-700 hover:text-green-600 font-medium transition">Projects</a>
+                    <a href="gallery.html" class="text-gray-700 hover:text-green-600 font-medium transition">Gallery</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-green-600 font-medium transition">Contact</a>
+                    <a href="donate.html" class="bg-green-600 text-white px-6 py-2 rounded-full font-bold hover:bg-green-700 transition shadow-md hover:shadow-lg transform hover:-translate-y-0.5">Donate Now</a>
+                </div>
+
+                <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-gray-700 focus:outline-none p-2">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl z-50">
+            <div class="px-4 py-4 space-y-3">
+                <a href="index.html" class="block px-3 py-2 text-green-600 font-bold bg-green-50 rounded-lg">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-700">About Us</a>
+                <a href="team.html" class="block px-3 py-2 text-gray-700">Our Team</a>
+                <a href="projects.html" class="block px-3 py-2 text-gray-700">Projects</a>
+                <a href="gallery.html" class="block px-3 py-2 text-gray-700">Gallery</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-700">Contact</a>
+                <a href="donate.html" class="block px-3 py-3 mt-4 text-center text-white bg-green-600 font-bold rounded-lg shadow">Donate Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative bg-gray-900 text-white h-[600px] flex items-center justify-center">
+        <div class="absolute inset-0 overflow-hidden">
+            <img 
+                src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=2070&auto=format&fit=crop" 
+                alt="Helping hands" 
+                class="w-full h-full object-cover opacity-30"
+            >
+            <div class="hero-overlay absolute inset-0"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto fade-in">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight drop-shadow-lg">
+                To Serve Bharat, <br>
+                <span class="text-green-400">Beyond Self</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 text-gray-100 max-w-3xl mx-auto font-light drop-shadow-md">
+                Join the Ajeevan Samarpan Parivaar movement to uplift society through education, healthcare, and environmental protection.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="donate.html" class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-10 rounded-full transition duration-300 text-lg shadow-xl transform hover:scale-105">
+                    Make a Contribution
+                </a>
+                <a href="volunteer.html" class="bg-white hover:bg-gray-100 text-gray-900 font-bold py-4 px-10 rounded-full transition duration-300 text-lg shadow-xl border border-gray-300 transform hover:scale-105">
+                    Join as Volunteer
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Mission</h2>
+            <div class="h-1 w-24 bg-green-600 mx-auto mb-8 rounded-full"></div>
+            <p class="text-gray-600 text-xl leading-relaxed">
+                Ajeevan Samarpan Parivaar is not just an NGO; it is a nationwide movement. 
+                We believe that real change begins at the grassroots level. From classrooms to villages, 
+                we are dedicated to empowering the youth, supporting the underprivileged, and keeping our environment clean.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50 px-4">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 text-center mb-16">Core Initiatives</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 group hover:-translate-y-2">
+                    <div class="h-56 bg-blue-50 flex items-center justify-center group-hover:bg-blue-100 transition">
+                        <span class="text-7xl">📚</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Education for All</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Providing free study materials, tuition, and mentorship to bridge the learning gap for underprivileged children. Every child deserves a future.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 group hover:-translate-y-2">
+                    <div class="h-56 bg-red-50 flex items-center justify-center group-hover:bg-red-100 transition">
+                        <span class="text-7xl">❤️</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Healthcare & Yoga</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Organizing health camps and community Yoga sessions to promote holistic physical and mental well-being for all citizens.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 group hover:-translate-y-2">
+                    <div class="h-56 bg-green-50 flex items-center justify-center group-hover:bg-green-100 transition">
+                        <span class="text-7xl">🌱</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Clean & Green India</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Leading massive tree plantation drives and cleanliness campaigns to protect Mother Earth for future generations.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-16 border-t-4 border-green-600 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+            
+            <div class="flex flex-col items-center md:items-start space-y-4">
+                <div class="bg-white p-3 rounded-xl inline-block">
+                    <img src="images/logo.png" alt="ASP Logo" class="h-20 w-auto">
+                </div>
+                <p class="text-gray-400 text-sm leading-relaxed max-w-xs">
+                    <strong>Ajeevan Samarpan Parivaar</strong><br/>
+                    "Samarpan se bandhe, jeevan bhar ke liye ekjut."<br/>
+                    Serving Bharat with pride since 2024.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-6 text-green-500 tracking-wide uppercase">Quick Links</h3>
+                <ul class="space-y-3 text-gray-300 font-medium">
+                    <li><a href="index.html" class="hover:text-white hover:pl-2 transition-all duration-300">Home</a></li>
+                    <li><a href="about.html" class="hover:text-white hover:pl-2 transition-all duration-300">About Us</a></li>
+                    <li><a href="projects.html" class="hover:text-white hover:pl-2 transition-all duration-300">Our Projects</a></li>
+                    <li><a href="donate.html" class="hover:text-white hover:pl-2 transition-all duration-300">Donate Now</a></li>
+                    <li><a href="download.html" class="hover:text-white hover:pl-2 transition-all duration-300">Download App</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-6 text-green-500 tracking-wide uppercase">Connect With Us</h3>
+                <div class="flex justify-center md:justify-start space-x-4 mb-8">
+                    <a href="https://www.linkedin.com/in/ajeevan-samarpan-parivaar-84424b354" target="_blank" class="bg-gray-800 p-3 rounded-full text-blue-500 hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-110"><i class="fab fa-linkedin-in text-xl"></i></a>
+                    <a href="https://www.instagram.com/asp_parivar" target="_blank" class="bg-gray-800 p-3 rounded-full text-pink-500 hover:bg-pink-600 hover:text-white transition-all duration-300 transform hover:scale-110"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="http://www.youtube.com/@aspparivaar" target="_blank" class="bg-gray-800 p-3 rounded-full text-red-500 hover:bg-red-600 hover:text-white transition-all duration-300 transform hover:scale-110"><i class="fab fa-youtube text-xl"></i></a>
+                    <a href="https://wa.me/+919935920617" target="_blank" class="bg-gray-800 p-3 rounded-full text-green-500 hover:bg-green-600 hover:text-white transition-all duration-300 transform hover:scale-110"><i class="fab fa-whatsapp text-xl"></i></a>
+                </div>
+                
+                <div class="text-gray-400 text-sm space-y-2 bg-gray-800 p-4 rounded-lg inline-block text-left">
+                    <p class="flex items-center gap-3"><i class="fas fa-phone-alt text-green-500"></i> +91 99359 20617</p>
+                    <p class="flex items-center gap-3"><i class="fas fa-envelope text-yellow-500"></i> aspparivaar@gmail.com</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-xs tracking-wider">
+            &copy; 2026 Ajeevan Samarpan Parivaar. Registered Trust. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
